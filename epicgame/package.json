@@ -1,0 +1,21 @@
+{
+  "name": "epicgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "grunt-shell": "^1.1.1"
+  },
+  "devDependencies": {
+    "concurrent": "^0.3.2",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-fest": "^0.1.5",
+    "grunt-shell": "^1.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
