@@ -13,6 +13,8 @@ public class AccountService {
     public AccountService() {
         this.registeredUsers = new HashMap<String, UserProfile>();
         this.users = new HashMap<String, UserProfile>();
+        registeredUsers.put("admin", new UserProfile("admin", "test@email.ru", "1"));
+        registeredUsers.put("test", new UserProfile("test", "test@email.ru", "pass"));
     }
     public boolean sign_in(String login, String password, String sessionId){
         UserProfile user = registeredUsers.getOrDefault(login, null);

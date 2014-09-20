@@ -21,7 +21,7 @@ public class AuthServlet extends HttpServlet {
         this.accountService = accountService;
     }
 
-    public void doGet(HttpServletRequest request,
+    public void doPost(HttpServletRequest request,
                       HttpServletResponse response) throws ServletException, IOException {
         String path = request.getPathInfo();
         String login;
@@ -61,7 +61,7 @@ public class AuthServlet extends HttpServlet {
             }
         }
     }
-    public void doPost(HttpServletRequest request,
+    public void doGet(HttpServletRequest request,
                        HttpServletResponse response) throws ServletException, IOException {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
